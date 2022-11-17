@@ -12,15 +12,9 @@ fetch("http://localhost:3000/images/1")
 
     })
 
-// function createImage(puppy) {
-//     let dogList = document.querySelector("#image-container")
-//     let dogImage = document.querySelector(".image")
-//     dogImage.src = puppy.image;
-
-// }
 
 function dogDetails (curly){
-    // let title = document.querySelector("#card-title")
+
     let dogTitle = document.querySelector(".title").textContent = curly.title
     let dogImage = document.querySelector(".image").src = curly.image
 
@@ -53,19 +47,6 @@ function addComment(){
 
     })
 
-    // newCom.textContent =
-
-
-    //  const amountToLikes = event.target['blood-amount'].value
-    // currentMovie.blood_amount += Number(amountToAdd);
-    // document.querySelector('#amount').textContent = currentMovie.blood_amount;
-
-    // event.target.reset()
-
-
-
-
-
 }
 
 function likedButton(wet) {
@@ -76,9 +57,9 @@ function likedButton(wet) {
     let likeNumber = wet.likes
 
     like.addEventListener("click", (e) => {
-        // e.preventDefault();
+
         likeNumber++
-        // let likeCount = wet.likes++;
+        
         likeCount.textContent = `${likeNumber} likes`;
 
     })
